@@ -1,0 +1,17 @@
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\ROMADB.exe.config
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\ROMADB.exe
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\ROMADB.pdb
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\MySql.Data.dll
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.csproj.AssemblyReference.cache
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.DatosCliente.resources
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.BuscarCliente.resources
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.Properties.Resources.resources
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.csproj.GenerateResource.cache
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.csproj.CoreCompileInputs.cache
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.csproj.CopyComplete
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.exe
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.pdb
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\ROMADB.exe.manifest
+C:\Users\braya\source\repos\ROMADB\ROMADB\bin\Debug\ROMADB.application
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.exe.manifest
+C:\Users\braya\source\repos\ROMADB\ROMADB\obj\Debug\ROMADB.application
