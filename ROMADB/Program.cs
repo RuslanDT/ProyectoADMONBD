@@ -16,7 +16,7 @@ namespace ROMADB
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BuscarCliente());
+            Application.Run(new crud());
         }
     }
 }

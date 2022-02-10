@@ -78,7 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BDComun.cs" />
-    <Compile Include="Cliente.cs" />
+    <Compile Include="cl_inventario.cs" />
     <Compile Include="ClientesDAL.cs" />
     <Compile Include="DatosCliente.cs">
       <SubType>Form</SubType>
@@ -86,19 +86,19 @@
     <Compile Include="DatosCliente.Designer.cs">
       <DependentUpon>DatosCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuscarCliente.cs">
+    <Compile Include="crud.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuscarCliente.Designer.cs">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    <Compile Include="crud.Designer.cs">
+      <DependentUpon>crud.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DatosCliente.resx">
       <DependentUpon>DatosCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuscarCliente.resx">
-      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    <EmbeddedResource Include="crud.resx">
+      <DependentUpon>crud.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

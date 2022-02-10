@@ -19,7 +19,7 @@ namespace ROMADB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Cliente pCliente = new Cliente();
+            cl_inventario pCliente = new cl_inventario();
             pCliente.Telefono = txtTelefono.Text.Trim();
             pCliente.Nombre = txtNombre.Text.Trim();
             pCliente.Calle = txtCalle.Text.Trim();
@@ -45,7 +45,7 @@ namespace ROMADB
 
         private void button5_Click(object sender, EventArgs e)
         {
-            BuscarCliente buscar = new BuscarCliente();
+            crud buscar = new crud();
             buscar.ShowDialog();
         }
     }
