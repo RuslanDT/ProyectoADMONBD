@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ROMADB
 {
-    public partial class BuscarCliente : Form
+    public partial class crud : Form
     {
-        public BuscarCliente()
+        public crud()
         {
             InitializeComponent();
         }

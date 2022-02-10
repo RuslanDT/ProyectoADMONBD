@@ -9,7 +9,7 @@ namespace ROMADB
 {
     public class ClientesDAL
     {
-        public static int Agregar(Cliente pCliente)
+        public static int Agregar(cl_inventario pCliente)
         {
 
             int retorno = 0;
@@ -21,16 +21,16 @@ namespace ROMADB
 
         }
 
-        public static List<Cliente> Buscar(string pTelefono)
+        public static List<cl_inventario> Buscar(string pTelefono)
         {
-            List<Cliente> lista = new List<Cliente>();
+            List<cl_inventario> lista = new List<cl_inventario>();
 
             MySqlCommand comando = new MySqlCommand(String.Format(
               "SELECT telefono, nombre, direccion, colonia, municipio, referencias FROM CLIENTE  where telefono = '{0}'", pTelefono), BDComun.ObtenerConexion());
                MySqlDataReader reader = comando.ExecuteReader();
             while (reader.Read())
             {
-                Cliente pCliente = new Cliente();
+                cl_inventario pCliente = new cl_inventario();
                 pCliente.Telefono = reader.GetString(0);
                 pCliente.Nombre = reader.GetString(1);
                 pCliente.Calle = reader.GetString(2);
