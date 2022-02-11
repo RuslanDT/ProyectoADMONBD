@@ -10,13 +10,13 @@ namespace ROMADB
 {
     public class ClientesDAL
     {
-        public static bool insertar_en_inventario(cl_inventario item)
+        public bool insertar_en_inventario(cl_inventario item)
         {
 
             try
             {
                 string insert = "insert into inventario(nombre_corto, descripcion, serie, color, fecha_adquisicion, " +
-                    "tipo_adquisicion,observaciones) values(@nombre,@descripcion,@serie,@color,@fecha,@tipo,@obsercaciones);";
+                    "tipo_adquisicion,observaciones, id_areas) values(@nombre,@descripcion,@serie,@color,@fecha,@tipo,@obsercaciones,@id_areas);";
                 MySqlCommand comando = new MySqlCommand(insert);
 
                 //string fechaHoy = DateTime.Now.ToString("yyyy-MM-dd ");
@@ -29,6 +29,7 @@ namespace ROMADB
                 comando.Parameters.AddWithValue("?fecha", fechaHoy);
                 comando.Parameters.AddWithValue("?tipo", item.Tipo_adquisicion);
                 comando.Parameters.AddWithValue("?obsercaciones", item.Observaciones);
+                comando.Parameters.AddWithValue("?id_areas", item.Id_areas);
 
                 BDComun.ejecutarSentencia(comando);
 
