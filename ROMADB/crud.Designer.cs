@@ -106,6 +106,7 @@ namespace ROMADB
             this.btn_modificar.TabIndex = 6;
             this.btn_modificar.Text = "MODIFICAR";
             this.btn_modificar.UseVisualStyleBackColor = true;
+            this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
             // 
             // crud
             // 

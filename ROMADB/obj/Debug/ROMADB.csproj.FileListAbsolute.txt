@@ -41,3 +41,4 @@ C:\Users\estar\Desktop\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.application
 C:\Users\estar\Desktop\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.exe
 C:\Users\estar\Desktop\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.pdb
 C:\Users\estar\Desktop\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.Fr_eliminar.resources
+C:\Users\estar\Desktop\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.Fr_modificar.resources

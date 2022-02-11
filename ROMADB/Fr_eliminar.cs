@@ -34,5 +34,21 @@ namespace ROMADB
             txtAdquisicion.Text = tipo;
             txtArea.Text = id_areas.ToString();
         }
+
+        private void btn_agregar_Click(object sender, EventArgs e)
+        {
+            ClientesDAL obj = new ClientesDAL();
+            //PASAMOS LOS PARAMETROS PARA ELIMINAR EL ARTICULO
+            int id_inve = Convert.ToInt32(txtIdInventario.Text);
+            string se = txtSerie.Text;
+            if (obj.eliminar_articulo(id_inve, se))
+            {
+                MessageBox.Show("ELIMINADO");
+            }
+            else
+            {
+                MessageBox.Show("ERROR");
+            }
+        }
     }
 }
