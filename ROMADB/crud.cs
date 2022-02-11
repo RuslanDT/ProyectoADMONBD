@@ -43,5 +43,50 @@ namespace ROMADB
             Fr_agregar v = new Fr_agregar();
             v.Show();
         }
+
+        private void btn_eliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //RECUPERAMOS LOS VLAORES 
+                string nombre_corto = "";
+                string descripcion = "";
+                string serie = "";
+                string color = "";
+                string tipo = "";
+                string fecha = "";
+                string observaciones = "";
+                int id_areas = -1;
+                int id_inventario = -1;
+
+                int index = dgvBuscar.SelectedRows[0].Index;
+
+                foreach (DataGridViewRow x in dgvBuscar.Rows)
+                {
+                    // SI  ESTA SELECCIONADO ENTONCES LO PASAMOS A ELIMINAR
+                    if (x.Index == index)
+                    {
+                        id_inventario = Convert.ToInt32(x.Cells["id_inventario"].Value.ToString());
+                        nombre_corto = x.Cells["nombre_corto"].Value.ToString();
+                        descripcion = x.Cells["descripcion"].Value.ToString();
+                        serie = x.Cells["serie"].Value.ToString();
+                        color = x.Cells["color"].Value.ToString();
+                        fecha = x.Cells["fecha_adquisicion"].Value.ToString();
+                        tipo = x.Cells["tipo_adquisicion"].Value.ToString();
+                        observaciones = x.Cells["observaciones"].Value.ToString();
+                        id_areas = Convert.ToInt32(x.Cells["id_areas"].Value.ToString());
+
+                    }
+
+                }
+                //YA CON LOS DATOS SE LOS PASAMOS AL FORMULARIO DE ELIMINAR 
+                Fr_eliminar v = new Fr_eliminar();
+                v.llenar_formulario(id_inventario, nombre_corto, descripcion, serie, color, fecha, tipo, observaciones, id_areas);
+                v.Show();
+            }
+            catch (Exception ex) { }
+            
+
+        }
     }
 }
