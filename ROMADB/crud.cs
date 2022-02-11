@@ -19,7 +19,8 @@ namespace ROMADB
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dgvBuscar.DataSource = ClientesDAL.Buscar(txtBuscarNumero.Text);
+            ClientesDAL obj = new ClientesDAL();
+            dgvBuscar.DataSource = obj.obtner_articulos();
         }
 
         private void txtBuscarNumero_TextChanged(object sender, EventArgs e)
@@ -33,6 +34,11 @@ namespace ROMADB
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_insertar_Click(object sender, EventArgs e)
         {
 
         }
