@@ -29,6 +29,7 @@ namespace ROMADB
             string color = coColor.SelectedItem.ToString();
             string tipo = txtAdquisicion.Text;
             string observaciones = txtObservaciones.Text;
+            int id_areas = Convert.ToInt32(coAreas.SelectedItem.ToString());
 
             //PASAMOS LOS VALORES AL OBJETO DE INVENTARIO
             cl_inventario obj = new cl_inventario();
@@ -38,6 +39,7 @@ namespace ROMADB
             obj.Color = color;
             obj.Tipo_adquisicion = tipo;
             obj.Observaciones = observaciones;
+            obj.Id_areas = id_areas;
 
             ClientesDAL objDAL = new ClientesDAL();
             if (objDAL.insertar_en_inventario(obj))
