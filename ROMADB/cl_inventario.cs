@@ -8,6 +8,7 @@ namespace ROMADB
 {
     public class cl_inventario
     {
+        private int id_inventario;
         private string nombre_corto;
         private string descripcion;
         private string serie;
@@ -17,6 +18,17 @@ namespace ROMADB
         private string observaciones;
         private int id_areas;
 
+        public int Id_inventario
+        {
+            get
+            {
+                return id_inventario;
+            }
+            set
+            {
+                id_inventario = value;
+            }
+        }
         public string Nombre_corto
         {
             get{
