@@ -90,14 +90,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ROMADB.exe" size="669664">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ROMADB.exe" size="670176">
       <assemblyIdentity name="ROMADB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>D/7shitvJ9aT079s8Zl/DoIXFlTmYArIiuoB06bZn0s=</dsig:DigestValue>
+        <dsig:DigestValue>gxaS3P1qwC6rdVD8xKgjYj9fvh08XSBUqRUxNDAD+Pk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

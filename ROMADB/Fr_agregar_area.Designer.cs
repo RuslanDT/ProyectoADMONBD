@@ -59,7 +59,7 @@ namespace ROMADB
             this.txtUbicacion.Multiline = true;
             this.txtUbicacion.Name = "txtUbicacion";
             this.txtUbicacion.Size = new System.Drawing.Size(190, 81);
-            this.txtUbicacion.TabIndex = 14;
+            this.txtUbicacion.TabIndex = 2;
             // 
             // label1
             // 
@@ -80,7 +80,7 @@ namespace ROMADB
             this.txtNombre.Location = new System.Drawing.Point(157, 106);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(190, 21);
-            this.txtNombre.TabIndex = 12;
+            this.txtNombre.TabIndex = 1;
             // 
             // label2
             // 
@@ -107,7 +107,7 @@ namespace ROMADB
             this.btn_agregar.Location = new System.Drawing.Point(145, 286);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(101, 26);
-            this.btn_agregar.TabIndex = 18;
+            this.btn_agregar.TabIndex = 3;
             this.btn_agregar.Text = "AGREGAR";
             this.btn_agregar.UseVisualStyleBackColor = false;
             this.btn_agregar.Click += new System.EventHandler(this.btn_agregar_Click);
@@ -126,7 +126,7 @@ namespace ROMADB
             this.btn_cancelar.Location = new System.Drawing.Point(269, 286);
             this.btn_cancelar.Name = "btn_cancelar";
             this.btn_cancelar.Size = new System.Drawing.Size(99, 26);
-            this.btn_cancelar.TabIndex = 17;
+            this.btn_cancelar.TabIndex = 4;
             this.btn_cancelar.Text = "CANCELAR";
             this.btn_cancelar.UseVisualStyleBackColor = false;
             this.btn_cancelar.Click += new System.EventHandler(this.btn_cancelar_Click);
