@@ -104,7 +104,7 @@ namespace ROMADB
             this.btn_agregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_agregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_agregar.ForeColor = System.Drawing.Color.White;
-            this.btn_agregar.Location = new System.Drawing.Point(104, 286);
+            this.btn_agregar.Location = new System.Drawing.Point(145, 286);
             this.btn_agregar.Name = "btn_agregar";
             this.btn_agregar.Size = new System.Drawing.Size(101, 26);
             this.btn_agregar.TabIndex = 18;

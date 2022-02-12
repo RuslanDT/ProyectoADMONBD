@@ -43,6 +43,8 @@ namespace ROMADB
                 {
                     MessageBox.Show("ERROR");
                 }
+                txtNombre.Text = "";
+                txtUbicacion.Text = "";
             }
             catch (Exception) { }
         }

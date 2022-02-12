@@ -17,7 +17,7 @@ namespace ROMADB
                 MySqlCommand comando = new MySqlCommand(insert);
                 comando.Parameters.AddWithValue("@Nombre", obj.Nombre);
                 comando.Parameters.AddWithValue("@Ubicacion", obj.Ubicacion);
-
+                BDComun.ejecutarSentencia(comando);
                 return true;
             }
             catch (Exception ex) { return false; }
