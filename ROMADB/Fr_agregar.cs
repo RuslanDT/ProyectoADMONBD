@@ -71,7 +71,7 @@ namespace ROMADB
         }
         private void llenarCombo()
         {
-            string select = "select id_areas from Areas;";
+            string select = "select nombre from Areas;";
             MySqlCommand comando = new MySqlCommand(select);
             DataTable tabla = BDComun.ejecutarConsulta(comando);
 
@@ -83,6 +83,12 @@ namespace ROMADB
 
             }
             coAreas.DataSource = comb;
+        }
+
+        private void btn_agregar_area_Click(object sender, EventArgs e)
+        {
+            Fr_agregar_area v = new Fr_agregar_area();
+            v.Show();
         }
     }
 }
