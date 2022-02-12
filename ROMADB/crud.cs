@@ -79,10 +79,6 @@ namespace ROMADB
                     }
 
                 }
-                //YA CON LOS DATOS SE LOS PASAMOS AL FORMULARIO DE ELIMINAR 
-                Fr_eliminar v = new Fr_eliminar();
-                v.llenar_formulario(id_inventario, nombre_corto, descripcion, serie, color, fecha, tipo, observaciones, id_areas);
-                v.Show();
             }
             catch (Exception ex) { }
             

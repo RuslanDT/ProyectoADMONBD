@@ -14,7 +14,7 @@ namespace ROMADB
         public static bool conectar()
         {
       
-            string conexion = "server = 192.168.8.3; database = proyecto_admon_bd; " + "uid = nuevo_user; pwd = 1234;";
+            string conexion = "server = localhost; database = proyecto_admon_bd; " + "uid = nuevo_user; pwd = 1234;";
             try
             {
                 conect = new MySqlConnection(conexion);

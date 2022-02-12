@@ -93,12 +93,6 @@
     <Compile Include="Fr_agregar.Designer.cs">
       <DependentUpon>Fr_agregar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Fr_eliminar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Fr_eliminar.Designer.cs">
-      <DependentUpon>Fr_eliminar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Fr_modificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,9 +106,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fr_agregar.resx">
       <DependentUpon>Fr_agregar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Fr_eliminar.resx">
-      <DependentUpon>Fr_eliminar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fr_modificar.resx">
       <DependentUpon>Fr_modificar.cs</DependentUpon>
@@ -157,6 +148,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Itsur.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
