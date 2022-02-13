@@ -294,8 +294,11 @@ namespace ROMADB
             this.MinimumSize = new System.Drawing.Size(681, 436);
             this.Name = "Fr_modificar";
             this.Text = "MODIFICAR";
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarColor)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnAgregarArea)).EndInit();
+=======
+>>>>>>> clases
             this.ResumeLayout(false);
             this.PerformLayout();
 
