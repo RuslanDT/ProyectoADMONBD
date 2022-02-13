@@ -17,7 +17,8 @@ namespace ROMADB
         public Fr_agregar()
         {
             InitializeComponent();
-            llenarCombo();
+            llenarComboAreas();
+            llenarComboColores();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -60,8 +61,6 @@ namespace ROMADB
             txtNombre.Text = "";
             txtObservaciones.Text = "";
             txtSerie.Text = "";
-
-
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
@@ -73,7 +72,7 @@ namespace ROMADB
         {
 
         }
-        private void llenarCombo()
+        private void llenarComboAreas()
         {
             string select = "select concat(id_areas, ' ', nombre) from Areas;";
             MySqlCommand comando = new MySqlCommand(select);
@@ -89,10 +88,34 @@ namespace ROMADB
             coAreas.DataSource = comb;
         }
 
-        private void btn_agregar_area_Click(object sender, EventArgs e)
+        private void llenarComboColores()
+        {
+            string select = "select color from colores;";
+            MySqlCommand comando = new MySqlCommand(select);
+            DataTable tabla = BDComun.ejecutarConsulta(comando);
+
+            List<string> comb = new List<string>();
+            foreach (DataRow row in tabla.Rows)
+            {
+
+                comb.Add(row[0].ToString());
+
+            }
+            coColor.DataSource = comb;
+        }
+
+        private void btnAgregarArea_Click(object sender, EventArgs e)
         {
             Fr_agregar_area v = new Fr_agregar_area();
-            v.Show();
+            v.ShowDialog();
+            llenarComboAreas();
+        }
+
+        private void btnAgregarColor_Click(object sender, EventArgs e)
+        {
+            fr_AgregarColor f = new fr_AgregarColor();
+            f.ShowDialog();
+            llenarComboColores();
         }
     }
 }

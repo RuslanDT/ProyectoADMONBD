@@ -43,7 +43,7 @@ namespace ROMADB
         private void btn_insertar_Click(object sender, EventArgs e)
         {
             Fr_agregar v = new Fr_agregar();
-            v.Show();
+            v.ShowDialog();
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace ROMADB
                 v.llenar_formulario(id_inventario, nombre_corto, descripcion, serie, color, fecha, tipo, observaciones, id_areas);
                 v.Show();
             }
-            catch (Exception ex) { }
+            catch (Exception) { }
         }
     }
 }

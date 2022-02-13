@@ -45,7 +45,10 @@ namespace ROMADB
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.coColor = new System.Windows.Forms.ComboBox();
             this.coArea = new System.Windows.Forms.ComboBox();
-            this.btn_agregar_area = new System.Windows.Forms.Button();
+            this.btnAgregarColor = new System.Windows.Forms.PictureBox();
+            this.btnAgregarArea = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarColor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarArea)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -238,24 +241,29 @@ namespace ROMADB
             this.coArea.Size = new System.Drawing.Size(190, 23);
             this.coArea.TabIndex = 59;
             // 
-            // btn_agregar_area
+            // btnAgregarColor
             // 
-            this.btn_agregar_area.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(34)))));
-            this.btn_agregar_area.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_agregar_area.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
-            this.btn_agregar_area.FlatAppearance.BorderSize = 2;
-            this.btn_agregar_area.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
-            this.btn_agregar_area.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(120)))), ((int)(((byte)(27)))));
-            this.btn_agregar_area.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_agregar_area.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar_area.ForeColor = System.Drawing.Color.White;
-            this.btn_agregar_area.Location = new System.Drawing.Point(111, 353);
-            this.btn_agregar_area.Name = "btn_agregar_area";
-            this.btn_agregar_area.Size = new System.Drawing.Size(99, 26);
-            this.btn_agregar_area.TabIndex = 60;
-            this.btn_agregar_area.Text = "Agregar Área";
-            this.btn_agregar_area.UseVisualStyleBackColor = false;
-            this.btn_agregar_area.Click += new System.EventHandler(this.btn_agregar_area_Click);
+            this.btnAgregarColor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarColor.Image = global::ROMADB.Properties.Resources.icono_agregar;
+            this.btnAgregarColor.Location = new System.Drawing.Point(269, 248);
+            this.btnAgregarColor.Name = "btnAgregarColor";
+            this.btnAgregarColor.Size = new System.Drawing.Size(23, 23);
+            this.btnAgregarColor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAgregarColor.TabIndex = 62;
+            this.btnAgregarColor.TabStop = false;
+            this.btnAgregarColor.Click += new System.EventHandler(this.btnAgregarColor_Click);
+            // 
+            // btnAgregarArea
+            // 
+            this.btnAgregarArea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregarArea.Image = global::ROMADB.Properties.Resources.icono_agregar;
+            this.btnAgregarArea.Location = new System.Drawing.Point(306, 308);
+            this.btnAgregarArea.Name = "btnAgregarArea";
+            this.btnAgregarArea.Size = new System.Drawing.Size(23, 23);
+            this.btnAgregarArea.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnAgregarArea.TabIndex = 61;
+            this.btnAgregarArea.TabStop = false;
+            this.btnAgregarArea.Click += new System.EventHandler(this.btnAgregarArea_Click);
             // 
             // Fr_modificar
             // 
@@ -263,7 +271,9 @@ namespace ROMADB
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(14)))), ((int)(((byte)(56)))));
             this.ClientSize = new System.Drawing.Size(665, 397);
-            this.Controls.Add(this.btn_agregar_area);
+            this.ControlBox = false;
+            this.Controls.Add(this.btnAgregarColor);
+            this.Controls.Add(this.btnAgregarArea);
             this.Controls.Add(this.coArea);
             this.Controls.Add(this.coColor);
             this.Controls.Add(this.label7);
@@ -280,8 +290,12 @@ namespace ROMADB
             this.Controls.Add(this.btn_cancelar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
+            this.MaximumSize = new System.Drawing.Size(681, 436);
+            this.MinimumSize = new System.Drawing.Size(681, 436);
             this.Name = "Fr_modificar";
-            this.Text = "Fr_modificar";
+            this.Text = "MODIFICAR";
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarColor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnAgregarArea)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,6 +318,7 @@ namespace ROMADB
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.ComboBox coColor;
         private System.Windows.Forms.ComboBox coArea;
-        private System.Windows.Forms.Button btn_agregar_area;
+        private System.Windows.Forms.PictureBox btnAgregarArea;
+        private System.Windows.Forms.PictureBox btnAgregarColor;
     }
 }

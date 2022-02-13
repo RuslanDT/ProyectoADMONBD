@@ -58,6 +58,7 @@ namespace ROMADB
             this.btn_mostrar.TabIndex = 0;
             this.btn_mostrar.Text = "MOSTRAR ";
             this.btn_mostrar.UseVisualStyleBackColor = false;
+            this.btn_mostrar.Visible = false;
             this.btn_mostrar.Click += new System.EventHandler(this.button1_Click);
             // 
             // dgvBuscar
@@ -159,6 +160,8 @@ namespace ROMADB
             this.Controls.Add(this.btn_mostrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
+            this.MaximumSize = new System.Drawing.Size(929, 536);
+            this.MinimumSize = new System.Drawing.Size(929, 536);
             this.Name = "crud";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "INVENTARIO";

@@ -91,3 +91,8 @@ C:\Users\braya\Documents\Visual Studio 2017\ProyectoADMONBD\ROMADB\obj\Debug\ROM
 C:\Users\braya\Documents\Visual Studio 2017\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.csproj.CopyComplete
 C:\Users\braya\Documents\Visual Studio 2017\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.exe
 C:\Users\braya\Documents\Visual Studio 2017\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.pdb
+C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\Google.Protobuf.dll
+C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\Renci.SshNet.dll
+C:\Users\doran\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.Fr_agregar_area.resources
+C:\Users\doran\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.fr_AgregarColor.resources
