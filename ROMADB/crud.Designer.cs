@@ -43,6 +43,7 @@ namespace ROMADB
             // btn_mostrar
             // 
             this.btn_mostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(34)))));
+            this.btn_mostrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_mostrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
             this.btn_mostrar.FlatAppearance.BorderSize = 2;
             this.btn_mostrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
@@ -77,6 +78,7 @@ namespace ROMADB
             // btn_eliminar
             // 
             this.btn_eliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(34)))));
+            this.btn_eliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_eliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
             this.btn_eliminar.FlatAppearance.BorderSize = 2;
             this.btn_eliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
@@ -96,6 +98,7 @@ namespace ROMADB
             // btn_insertar
             // 
             this.btn_insertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(34)))));
+            this.btn_insertar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_insertar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
             this.btn_insertar.FlatAppearance.BorderSize = 2;
             this.btn_insertar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
@@ -115,6 +118,7 @@ namespace ROMADB
             // btn_modificar
             // 
             this.btn_modificar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(160)))), ((int)(((byte)(34)))));
+            this.btn_modificar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_modificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));
             this.btn_modificar.FlatAppearance.BorderSize = 2;
             this.btn_modificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(191)))), ((int)(((byte)(0)))));

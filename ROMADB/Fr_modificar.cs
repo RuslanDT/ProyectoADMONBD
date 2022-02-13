@@ -72,5 +72,11 @@ namespace ROMADB
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void btn_agregar_area_Click(object sender, EventArgs e)
+        {
+            Fr_agregar v = new Fr_agregar();
+            v.Show();
+        }
     }
 }
