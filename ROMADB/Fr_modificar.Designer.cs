@@ -281,7 +281,7 @@ namespace ROMADB
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
             this.Name = "Fr_modificar";
-            this.Text = "Fr_modificar";
+            this.Text = "MODIFICAR";
             this.ResumeLayout(false);
             this.PerformLayout();
 
