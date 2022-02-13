@@ -29,7 +29,11 @@ namespace ROMADB
             string color = coColor.SelectedItem.ToString();
             string tipo = txtAdquisicion.Text;
             string observaciones = txtObservaciones.Text;
-            int id_areas = Convert.ToInt32(coAreas.SelectedItem.ToString());
+            String area_Conc = coAreas.SelectedItem.ToString();
+            String[] p_Con = area_Conc.Split(' ');
+            int id_areas = Int32.Parse(p_Con[0]);
+
+
 
             //PASAMOS LOS VALORES AL OBJETO DE INVENTARIO
             cl_inventario obj = new cl_inventario();
@@ -71,7 +75,7 @@ namespace ROMADB
         }
         private void llenarCombo()
         {
-            string select = "select nombre from Areas;";
+            string select = "select concat(id_areas, ' ', nombre) from Areas;";
             MySqlCommand comando = new MySqlCommand(select);
             DataTable tabla = BDComun.ejecutarConsulta(comando);
 
