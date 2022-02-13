@@ -17,8 +17,8 @@ namespace ROMADB
         public Fr_modificar()
         {
             InitializeComponent();
-            
             llenar_combo_area();
+            llenarComboColores();
         }
 
         
@@ -73,10 +73,32 @@ namespace ROMADB
             }
         }
 
-        private void btn_agregar_area_Click(object sender, EventArgs e)
+        private void llenarComboColores()
+        {
+            string select = "select color from colores;";
+            MySqlCommand comando = new MySqlCommand(select);
+            DataTable tabla = BDComun.ejecutarConsulta(comando);
+
+            List<string> comb = new List<string>();
+            foreach (DataRow row in tabla.Rows)
+            {
+
+                comb.Add(row[0].ToString());
+
+            }
+            coColor.DataSource = comb;
+        }
+
+        private void btnAgregarArea_Click(object sender, EventArgs e)
         {
             Fr_agregar v = new Fr_agregar();
-            v.Show();
+            v.ShowDialog();
+        }
+
+        private void btnAgregarColor_Click(object sender, EventArgs e)
+        {
+            fr_AgregarColor f = new fr_AgregarColor();
+            f.ShowDialog();
         }
     }
 }

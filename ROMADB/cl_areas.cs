@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ROMADB
 {
-    class cl_areas
+    public class cl_areas
     {
         private string nombre;
         private string ubicacion;

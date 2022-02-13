@@ -21,7 +21,7 @@ namespace ROMADB
                 conect.Open();
                 return true;
             }
-            catch (Exception e) { return false; }
+            catch (Exception ) { return false; }
         }
         public static void desconectar()
         {
@@ -43,7 +43,7 @@ namespace ROMADB
                 }
 
             }
-            catch (Exception e)
+            catch (Exception )
             {
 
             }
@@ -65,7 +65,7 @@ namespace ROMADB
                     adaptador.Fill(resultado_consulta);
                     return resultado_consulta;
                 }
-                catch (Exception e)
+                catch (Exception )
                 {
                     return null;
                 }
@@ -80,8 +80,6 @@ namespace ROMADB
                 return null;
             }
         }
-
-
 
 
     }

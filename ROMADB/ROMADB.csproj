@@ -79,6 +79,7 @@
   <ItemGroup>
     <Compile Include="BDComun.cs" />
     <Compile Include="cl_areas.cs" />
+    <Compile Include="Cl_Color.cs" />
     <Compile Include="cl_inventario.cs" />
     <Compile Include="ClienteDAL.cs" />
     <Compile Include="cl_inventarioDAL.cs" />
@@ -93,6 +94,12 @@
     </Compile>
     <Compile Include="Fr_agregar.Designer.cs">
       <DependentUpon>Fr_agregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fr_AgregarColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fr_AgregarColor.Designer.cs">
+      <DependentUpon>fr_AgregarColor.cs</DependentUpon>
     </Compile>
     <Compile Include="Fr_agregar_area.cs">
       <SubType>Form</SubType>
@@ -113,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Fr_agregar.resx">
       <DependentUpon>Fr_agregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fr_AgregarColor.resx">
+      <DependentUpon>fr_AgregarColor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Fr_agregar_area.resx">
       <DependentUpon>Fr_agregar_area.cs</DependentUpon>

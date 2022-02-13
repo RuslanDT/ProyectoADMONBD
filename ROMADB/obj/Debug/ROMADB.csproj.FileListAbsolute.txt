@@ -95,3 +95,4 @@ C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\Google.Protobuf.dll
 C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\BouncyCastle.Crypto.dll
 C:\Users\doran\ProyectoADMONBD\ROMADB\bin\Debug\Renci.SshNet.dll
 C:\Users\doran\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.Fr_agregar_area.resources
+C:\Users\doran\ProyectoADMONBD\ROMADB\obj\Debug\ROMADB.fr_AgregarColor.resources

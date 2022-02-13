@@ -34,10 +34,7 @@ namespace ROMADB
 
                 return true;
             }
-            catch (Exception ex) { return false; }
-
-            
-
+            catch (Exception) { return false; }
         }
 
        
@@ -74,7 +71,7 @@ namespace ROMADB
                 return listaP;
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return null;
             }
@@ -92,7 +89,7 @@ namespace ROMADB
 
                 return true;
             }
-            catch (Exception ex) { return false; }
+            catch (Exception) { return false; }
         }
 
         public bool modificar(cl_inventario item)
@@ -124,8 +121,54 @@ namespace ROMADB
                 BDComun.ejecutarSentencia(comando);
                 return true;
             }
-            catch (Exception ex) { return false; }
+            catch (Exception) { return false; }
         }
 
+        public bool modiColor(Cl_Color item, string c)
+        {
+            try
+            {
+                string update = "update Colores set color = @NEW_color where color = @OLD_name;";
+
+
+                MySqlCommand comando = new MySqlCommand(update);
+
+                comando.Parameters.AddWithValue("@NEW_color", item.Color);
+                comando.Parameters.AddWithValue("@OLD_name", c);
+
+
+                BDComun.ejecutarSentencia(comando);
+                return true;
+            }
+            catch (Exception) { return false; }
+        }
+
+        public bool modiArea(cl_areas item, string OLDnombre)
+        {
+            try
+            {
+                //SE ACTUALIZA EL NOMBRE
+                string update = "update Areas set nombre = @nombreNEW where nombre = @nombreOLD; ";
+
+                MySqlCommand comando = new MySqlCommand(update);
+
+                comando.Parameters.AddWithValue("@nombreNEW", item.Nombre);
+                comando.Parameters.AddWithValue("@nombreOLD", OLDnombre);
+
+                BDComun.ejecutarSentencia(comando);
+
+                //SE ACTUALIZA LA UBICACION
+                string update2 = "update Areas set ubicacion = @ubiNEW where nombre = @nombreOLD; ";
+
+                MySqlCommand comando2 = new MySqlCommand(update2);
+
+                comando.Parameters.AddWithValue("@ubiOLD", item.Ubicacion);
+                comando.Parameters.AddWithValue("@ubiNEW", item.Nombre);
+
+                BDComun.ejecutarSentencia(comando2);
+                return true;
+            }
+            catch (Exception) { return false; }
+        }
     }
 }
